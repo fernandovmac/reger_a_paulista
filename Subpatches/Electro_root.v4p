@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\RaP\Subpatches\Electro_root.v4p" systemname="Electro_root" filename="C:\1710-Sedric-SeatingBuck-CES\vvvv\Interactive-Concepts\nightout-velvet\Electro_root.v4p" scrollx="0" scrolly="448" locked="0">
-   <BOUNDS type="Window" left="1440" top="488" width="7976" height="11056">
+   <PATCH nodename="C:\reger_a_paulista\Subpatches\Electro_root.v4p" systemname="Electro_root" filename="C:\1710-Sedric-SeatingBuck-CES\vvvv\Interactive-Concepts\nightout-velvet\Electro_root.v4p" scrollx="0" scrolly="448" locked="0">
+   <BOUNDS type="Window" left="12168" top="4512" width="7976" height="11056">
    </BOUNDS>
    <NODE systemname="Group (DX11.Layer)" nodename="Group (DX11.Layer)" componentmode="Hidden" id="1" hiddenwhenlocked="0" managers="" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll">
    <BOUNDS type="Node" left="2056" top="4067" width="4662" height="252">
@@ -111,7 +111,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3085" top="3703" width="5956" height="11598">
    </BOUNDS>
-   <BOUNDS type="Window" left="1280" top="1040" width="13936" height="10520">
+   <BOUNDS type="Window" left="8264" top="3008" width="13936" height="10520">
    </BOUNDS>
    <PIN pinname="Leap XYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
@@ -167,27 +167,9 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <PIN pinname="Input Node" visible="1">
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="637">
-   <BOUNDS type="Node" left="1680" top="8340" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Color" visible="1">
-   </PIN>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Render State" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="600" srcpinname="Output" dstnodeid="637" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="637" srcpinname="Layer" dstnodeid="636" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="638">
    <BOUNDS type="Node" left="815" top="8190" width="100" height="100">
    </BOUNDS>
@@ -198,12 +180,6 @@
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="638" srcpinname="Render State" dstnodeid="637" dstpinname="Render State">
-   </LINK>
-   <LINK srcnodeid="578" srcpinname="Y Output Value" dstnodeid="637" dstpinname="Enabled" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="518" srcpinname="Buffers" dstnodeid="637" dstpinname="Texture">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="639">
    <BOUNDS type="Box" left="2704" top="808" width="696" height="208">
    </BOUNDS>
@@ -251,5 +227,57 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="641" srcpinname="Y Output Value" dstnodeid="566" dstpinname="Z">
+   </LINK>
+   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="637">
+   <BOUNDS type="Node" left="1680" top="8340" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="600" srcpinname="Output" dstnodeid="637" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="637" srcpinname="Layer" dstnodeid="636" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="638" srcpinname="Render State" dstnodeid="637" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="578" srcpinname="Y Output Value" dstnodeid="637" dstpinname="Enabled" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="518" srcpinname="Buffers" dstnodeid="637" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="642">
+   <BOUNDS type="Node" left="1640" top="7120" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="1" values="0.58">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="642" srcpinname="Transform Out" dstnodeid="637" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="643">
+   <BOUNDS type="Node" left="1496" top="6384" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="0.25">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="-0.67">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="643" srcpinname="Transform Out" dstnodeid="642" dstpinname="Transform In">
    </LINK>
    </PATCH>

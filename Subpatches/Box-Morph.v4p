@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\RaP\Subpatches\Box-Morph.v4p" systemname="Box-Morph" filename="C:\RaP\Subpatches\Box-Morph.v4p">
+   <PATCH nodename="C:\reger_a_paulista\Subpatches\Box-Morph.v4p" systemname="Box-Morph" filename="C:\RaP\Subpatches\Box-Morph.v4p">
    <NODE systemname="Camera (Transform Softimage Legacy)" filename="%VVVV%\lib\nodes\modules\_legacy\Editing\Camera (Transform Softimage Legacy).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3750" top="7485" width="100" height="100">
    </BOUNDS>

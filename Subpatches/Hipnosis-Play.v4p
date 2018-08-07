@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\RaP\Subpatches\Hipnosis-Play.v4p" systemname="Hipnosis-Play" filename="C:\RaP\Subpatches\Hipnosis-Play.v4p" scrollx="264" scrolly="288">
+   <PATCH nodename="C:\reger_a_paulista\Subpatches\Hipnosis-Play.v4p" systemname="Hipnosis-Play" filename="C:\RaP\Subpatches\Hipnosis-Play.v4p" scrollx="264" scrolly="1368">
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3836" top="6268" width="100" height="100">
    </BOUNDS>
@@ -31,7 +31,7 @@
    </PIN>
    </NODE>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="3836" top="5620" width="100" height="100">
+   <BOUNDS type="Node" left="3716" top="5420" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -47,13 +47,13 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" visible="1" values="8">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="1.75" visible="1">
+   <PIN pinname="Width" slicecount="1" visible="1" values="1.65">
    </PIN>
    <PIN pinname="Alignment" slicecount="1" values="Centered">
    </PIN>
    <PIN pinname="Phase" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input" slicecount="1" values="1.07">
+   <PIN pinname="Input" slicecount="1" values="0.98">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="4" systemname="IOBox (Color)">
@@ -176,7 +176,7 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="5" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="608" top="8680" width="15200" height="6688">
+   <BOUNDS type="Window" left="4648" top="5200" width="15200" height="6688">
    </BOUNDS>
    <PACK Name="addonpack" Version="36.0.0">
    </PACK>
@@ -205,7 +205,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4304" top="4592" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.88">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.39">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -362,8 +362,6 @@
    </LINK>
    <LINK srcnodeid="33" srcpinname="Output" dstnodeid="11" dstpinname="Phase">
    </LINK>
-   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="3" dstpinname="Width">
-   </LINK>
    <NODE systemname="CircularSpread (Spreads)" nodename="CircularSpread (Spreads)" componentmode="Hidden" id="36">
    <BOUNDS type="Node" left="1332" top="4108" width="100" height="100">
    </BOUNDS>
@@ -387,7 +385,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="2760" top="5200" width="100" height="100">
+   <BOUNDS type="Node" left="3736" top="5760" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>

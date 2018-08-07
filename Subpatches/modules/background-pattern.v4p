@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\RaP\Subpatches\modules\background-pattern.v4p" systemname="background-pattern" filename="C:\1710-Sedric-SeatingBuck-CES\vvvv\Interactive-Concepts\nightout-velvet\modules\background-pattern.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\reger_a_paulista\Subpatches\modules\background-pattern.v4p" systemname="background-pattern" filename="C:\1710-Sedric-SeatingBuck-CES\vvvv\Interactive-Concepts\nightout-velvet\modules\background-pattern.v4p" scrollx="0" scrolly="-360">
    <NODE systemname="Cross (2d)" nodename="Cross (2d)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3523" top="3207" width="100" height="100">
    </BOUNDS>
@@ -43,7 +43,7 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="XYZ" slicecount="1" visible="1" values="0.072">
+   <PIN pinname="XYZ" slicecount="1" visible="1" values="0.07">
    </PIN>
    </NODE>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="4" hiddenwhenlocked="0" managers="">
@@ -67,7 +67,7 @@
    </PIN>
    <PIN pinname="Z" slicecount="1" values="0.377">
    </PIN>
-   <PIN pinname="X" slicecount="1" values="0.86" visible="1">
+   <PIN pinname="X" slicecount="1" visible="1" values="0.86">
    </PIN>
    <PIN pinname="Y" slicecount="1" visible="1" values="0">
    </PIN>
@@ -277,7 +277,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Spread Count" slicecount="1" values="9" visible="1">
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="9">
    </PIN>
    <PIN pinname="Width" slicecount="1" visible="1" values="2.51">
    </PIN>
@@ -378,7 +378,7 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
-   <BOUNDS type="Window" left="1280" top="1040" width="13936" height="10520">
+   <BOUNDS type="Window" left="8264" top="3008" width="13936" height="10520">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
