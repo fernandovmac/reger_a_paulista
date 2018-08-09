@@ -1,0 +1,77 @@
+#N canvas 75 28 711 649 12;
+#X declare -lib mrpeach;
+#X obj -74 235 cnv 15 100 40 empty empty empty 20 12 0 14 -4034 -66577
+0;
+#X obj -45 349 udpsend;
+#X msg -52 322 disconnect;
+#X obj -45 248 packOSC;
+#X obj -45 384 tgl 15 0 empty empty 1=connected 20 8 0 8 -4034 -257985
+-1 0 1;
+#X msg -57 216 typetags \$1;
+#X obj -57 198 tgl 15 0 empty empty empty 17 7 0 10 -257985 -258113
+-1 0 1;
+#X text 26 215 typetags are on by default;
+#X msg -98 175 bufsize 100;
+#X text -11 175 set buffer size (default is 64000 bytes);
+#X floatatom 1 277 5 0 0 0 - - -;
+#X text 51 277 bundle depth;
+#X text 55 247 <- First open routeOSC-help \, then connect;
+#X msg -74 300 connect 169.254.33.170 9998;
+#X obj 21 -13 r palm1Y;
+#X floatatom 21 14 5 0 0 0 - - -;
+#X floatatom -45 16 5 0 0 0 - - -;
+#X obj -45 -11 r palm1X;
+#X floatatom 88 11 5 0 0 0 - - -;
+#X obj 88 -13 r palm1Z;
+#X msg -46 51 send /palm1z \$1;
+#X msg -46 84 send /palm1y \$1;
+#X msg -46 121 send /palm1x \$1;
+#X floatatom 221 14 5 0 0 0 - - -;
+#X floatatom 155 16 5 0 0 0 - - -;
+#X floatatom 288 11 5 0 0 0 - - -;
+#X msg 154 51 send /palm2z \$1;
+#X msg 154 84 send /palm2y \$1;
+#X msg 154 121 send /palm2x \$1;
+#X obj 155 -11 r palm2X;
+#N canvas 497 62 494 344 META 0;
+#X text 12 185 HELP_PATCH_AUTHORS "pd meta" information added by Jonathan
+Wilkes for Pd version 0.42.;
+#X text 12 25 LICENSE GPL v2 or later;
+#X text 12 165 AUTHOR Martin Peach;
+#X text 12 5 KEYWORDS control network;
+#X text 12 45 DESCRIPTION packOSC is like sendOSC except it outputs
+a list of floats instead of directly connecting to the network;
+#X text 12 85 INLET_0 anything send sendtyped prefix timetagoffset
+bufsize typetags;
+#X text 12 125 OUTLET_0 anything;
+#X text 12 145 OUTLET_1 float;
+#X restore 377 4 pd META;
+#X obj 288 -13 r palm2Z;
+#X obj 221 -13 r palm2Y;
+#X obj 436 80 import mrpeach;
+#X connect 1 0 4 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 3 1 10 0;
+#X connect 5 0 3 0;
+#X connect 6 0 5 0;
+#X connect 8 0 3 0;
+#X connect 13 0 1 0;
+#X connect 14 0 15 0;
+#X connect 15 0 21 0;
+#X connect 16 0 22 0;
+#X connect 17 0 16 0;
+#X connect 18 0 20 0;
+#X connect 19 0 18 0;
+#X connect 20 0 3 0;
+#X connect 21 0 3 0;
+#X connect 22 0 3 0;
+#X connect 23 0 27 0;
+#X connect 24 0 28 0;
+#X connect 25 0 26 0;
+#X connect 26 0 3 0;
+#X connect 27 0 3 0;
+#X connect 28 0 3 0;
+#X connect 29 0 24 0;
+#X connect 31 0 25 0;
+#X connect 32 0 23 0;
