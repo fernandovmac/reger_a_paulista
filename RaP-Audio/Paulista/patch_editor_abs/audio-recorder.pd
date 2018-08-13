@@ -5,7 +5,7 @@
 #X obj 513 91 f;
 #X obj 541 92 + 1;
 #X obj 513 113 + 1;
-#X floatatom 173 135 5 0 0 1 TAKE - -, f 5;
+#X floatatom 173 135 5 0 0 1 TAKE - -;
 #X msg 467 214 stop;
 #X obj 467 45 sel 0 1;
 #X obj 486 160 delay 100;
@@ -65,7 +65,7 @@ LEVEL 133 7 0 10 -158136 -1 -1 7900 1;
 #X obj 208 -15 loadbang;
 #X obj 570 284 f \$1;
 #X obj 544 227 t f b;
-#X floatatom 231 115 5 0 0 0 - - -, f 5;
+#X floatatom 231 115 5 0 0 0 - - -;
 #X obj 467 16 r rec/stop-s;
 #X obj 240 50 r rec/stop-s;
 #X obj 540 450 pack f f;
