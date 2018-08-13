@@ -111,11 +111,11 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3152" top="5530" width="990" height="705">
    </BOUNDS>
-   <PIN pinname="Rows" slicecount="1" values="2">
+   <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Input String" slicecount="2" values="/leap2/left,/leap2/right">
+   <PIN pinname="Input String" slicecount="3" values="/leap2/left,/leap2/right,/leap2/active">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -143,9 +143,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
-   <BOUNDS type="Node" left="8278" top="4560" width="100" height="100">
+   <BOUNDS type="Node" left="6286" top="4584" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8278" top="4560" width="795" height="720">
+   <BOUNDS type="Box" left="6286" top="4584" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -169,9 +169,9 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="2">
+   <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Input 3" visible="1" slicecount="2" values="-0.77578,0.33969">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Input 4" visible="1" slicecount="1" values="0">
    </PIN>
@@ -205,11 +205,13 @@
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Leap (Devices)" filename="%VVVV%\lib\packs\VL.Devices.Leap.0.79.17-g63a3d4ba77\vvvv\nodes\vl\VVVV.Devices.Leap.vl" nodename="Leap (Devices)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="4438" top="432" width="100" height="100">
+   <BOUNDS type="Node" left="4486" top="448" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Frame" visible="1">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Palm Positions Bin Size" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="LastFrame (Leap)" filename="%VVVV%\lib\packs\VL.Devices.Leap.0.79.17-g63a3d4ba77\vvvv\nodes\vl\VVVV.Devices.Leap.vl" nodename="LastFrame (Leap)" componentmode="Hidden" id="5">
@@ -462,4 +464,58 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="49">
+   <BOUNDS type="Node" left="8272" top="4816" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="48">
+   <BOUNDS type="Node" left="9448" top="5016" width="976" height="216">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9448" top="5016" width="976" height="216">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Leap 2 active|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
+   <BOUNDS type="Box" left="8840" top="5040" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8840" top="5040" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="47" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="9" dstpinname="Input 3">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="8296" top="4384" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Default" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Palm Positions Bin Size" dstnodeid="50" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Output" dstnodeid="49" dstpinname="Input 1">
+   </LINK>
    </PATCH>

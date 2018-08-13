@@ -57,7 +57,7 @@
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
@@ -69,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3944" top="4280" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -84,18 +84,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Enabled">
-   </LINK>
-   <NODE systemname="Chess-Animated" filename="Chess-Animated.v4p" nodename="Chess-Animated.v4p" componentmode="Hidden" id="36">
-   <BOUNDS type="Node" left="5623" top="3022" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4312" top="1704" width="12964" height="8040">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-1" top="-1" width="12964" height="8040">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Hipnosis-Play" filename="Hipnosis-Play.v4p" nodename="Hipnosis-Play.v4p" componentmode="Hidden" id="100">
@@ -168,12 +156,24 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="107" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="106" srcpinname="Output" dstnodeid="9" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="104" srcpinname="Y Output Value" dstnodeid="100" dstpinname="Z">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="100" dstpinname="X">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="100" dstpinname="Y">
    </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="108">
+   <BOUNDS type="Node" left="440" top="952" width="696" height="216">
+   </BOUNDS>
+   <BOUNDS type="Box" left="440" top="952" width="696" height="216">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="hipnosys">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

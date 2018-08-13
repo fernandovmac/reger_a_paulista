@@ -38,14 +38,14 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="1" dstpinname="Transform In">
    </LINK>
-   <BOUNDS type="Window" left="5664" top="3984" width="12096" height="7248">
+   <BOUNDS type="Window" left="5664" top="3984" width="6024" height="7248">
    </BOUNDS>
    <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="3">
-   <BOUNDS type="Box" left="2168" top="6368" width="696" height="208">
+   <BOUNDS type="Box" left="312" top="5352" width="696" height="208">
    </BOUNDS>
-   <BOUNDS type="Node" left="2168" top="6368" width="0" height="0">
+   <BOUNDS type="Node" left="312" top="5352" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -101,9 +101,9 @@
    <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="6" dstpinname="Transform In">
    </LINK>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="2160" top="5944" width="100" height="100">
+   <BOUNDS type="Node" left="304" top="4928" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2160" top="5944" width="1600" height="1600">
+   <BOUNDS type="Box" left="304" top="4928" width="1600" height="1600">
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1">
    </PIN>
@@ -137,9 +137,9 @@
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="2" dstpinname="ScaleY">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9">
-   <BOUNDS type="Box" left="2752" top="4888" width="480" height="480">
+   <BOUNDS type="Box" left="896" top="3872" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2752" top="4888" width="0" height="0">
+   <BOUNDS type="Node" left="896" top="3872" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -160,28 +160,6 @@
    </NODE>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Enabled">
    </LINK>
-   <NODE systemname="BezierTest" filename="BezierTest.v4p" nodename="BezierTest.v4p" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="2030" top="3956" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="0" top="0" width="7919" height="8290">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-1" top="-1" width="7919" height="8290">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="CirclesPlay" filename="CirclesPlay.v4p" nodename="CirclesPlay.v4p" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="6124" top="2900" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4562" top="962" width="3124" height="3876">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-1256" top="1040" width="12280" height="13120">
-   </BOUNDS>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="24" srcpinname="Layer Out" dstnodeid="7" dstpinname="Layer 1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25">
    <BOUNDS type="Box" left="3832" top="552" width="696" height="208">
    </BOUNDS>
@@ -194,6 +172,20 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="TranslateZ">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="26">
+   <BOUNDS type="Node" left="168" top="224" width="888" height="216">
+   </BOUNDS>
+   <BOUNDS type="Box" left="168" top="224" width="888" height="216">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="background">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
    </PATCH>
