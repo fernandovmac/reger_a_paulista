@@ -2,18 +2,27 @@
 
 
 
-#### Teste de comunicacao:
+#### This repo refers to the setup of The installation Reger a Paulista, presented in SESI-SP August 2018
 
--Para a realizacao do teste da rede eu preparei tres patches: _rootPC1, _rootPC2 e _rootPC3:
+#### Author: Fernando Visockis
 
-​	-O primeiro recebe mensagens OSC
+#### Artists: Fernando Visockis & Andre Vicentini
 
-​	-O 2 e 3 enviam
+Documentation: https://vimeo.com/305373407
 
--Como rodar:
+#### Setup
 
-​	-Apos configurada a rede e os ips fixos, rodar cada patch em seu dedicado PC 
+The system comprises of 3 pcs and two Leap Motion sensors. The communication protocol in use is OCS. It uses vvvv beta38.6 and PD0.45
 
-​	-Trocar o endereco de ip para ser o equivalente ao estabelecido na rede
+PC1: Runs the visuals programmed in vvvv and the sound programmed in PD. It streams the visual content to the LED facade of the SESI building
 
-​	-Desconectar os IO box que vem do Leap e testar o envio de dados manualmente
+PC2: Runs 1 Leap Motion sensor
+
+PC3: Runs 1 Leap Motion sensor
+
+#### Dependencies
+
+DX11
+
+
+
